@@ -4,14 +4,17 @@
 [ext_resource type="Script" path="res://player.gd" id="1_bs8i1"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_0qbdt"]
-radius = 45.0
+radius = 7.07107
 
 [node name="Player" type="RigidBody2D"]
 gravity_scale = 0.0
 script = ExtResource("1_bs8i1")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_5gjam")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_0qbdt")
+
+[node name="Camera2D" type="Camera2D" parent="."]
